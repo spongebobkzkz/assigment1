@@ -2,32 +2,32 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Task 1 – O(n)
+    // Task 1 
     public static int sumOfSquares(int n) {
         if (n == 0) return 0;
         return n * n + sumOfSquares(n - 1);
     }
 
-    // Task 2 – O(n)
+    // Task 2 
     public static int sumFirstNElements(int[] arr, int n) {
         if (n == 0) return 0;
         return arr[n - 1] + sumFirstNElements(arr, n - 1);
     }
 
-    // Массивті рекурсивті оқу – O(n)
+    
     public static void readArray(Scanner sc, int[] arr, int i) {
         if (i == arr.length) return;
         arr[i] = sc.nextInt();
         readArray(sc, arr, i + 1);
     }
 
-    // Task 3 – O(n)
+    // Task 3 
     public static long sumOfPowers(int b, int n) {
         if (n == 0) return 1;
         return (long) Math.pow(b, n) + sumOfPowers(b, n - 1);
     }
 
-    // Task 4 – O(n), массив те, цикл де жоқ
+    // Task 4
     public static void printReverse(Scanner sc, int n) {
         if (n == 0) return;
         int x = sc.nextInt();
